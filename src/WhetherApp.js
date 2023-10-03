@@ -34,7 +34,7 @@ const WhetherApp = () => {
     
         let year = d.getFullYear();
     
-        return `${day} ${dates} ${month} ${year}`
+        return `${day} ${month} ${dates}, ${year}`
     }
 
     return(
