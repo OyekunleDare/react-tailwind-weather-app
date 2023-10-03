@@ -26,6 +26,7 @@ const WhetherApp = () => {
     const date = (d) =>{
         let months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
         let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        let dates = d.getDate();
     
         let day = days[d.getDay()];
     
@@ -33,7 +34,7 @@ const WhetherApp = () => {
     
         let year = d.getFullYear();
     
-        return `${day} ${month} ${year}`
+        return `${day} ${dates} ${month} ${year}`
     }
 
     return(
