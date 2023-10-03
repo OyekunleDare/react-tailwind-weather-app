@@ -47,7 +47,7 @@ const WhetherApp = () => {
                     <div className={(typeof weather.main.temp != "undefined" & weather.main.temp < 20) ? '"w-96 p-4 rounded-md bg-[url(img/blue.jpg)]' : '"w-96 bg-slate-300 p-4 rounded-md bg-[url(img/red.jpg)]'}>
                 <p className="justify-center items-center text-center grid">
                     <span className="justify-center items-center grid text-center p-9 text-8xl mt-5 font-semibold bg-slate-900 text-white opacity-90 w-64 h-48 rounded-lg">
-                    {Math.round(weather.main.temp)}&#176;C
+                    {weather.main.temp}&#176;C
                         <span className="text-2xl text-center">
                             {weather.weather[0].main}
                         </span>
