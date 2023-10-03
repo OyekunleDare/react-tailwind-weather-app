@@ -12,7 +12,7 @@ const WhetherApp = () => {
     const [weather, setWeather] = useState({});
 
     const Search = (evt) => {
-        if(evt.key === "Enter") {
+        if(evt.key != "") {
             fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
             .then(res => res.json())
             .then(result => {
